@@ -1,0 +1,184 @@
+/* Style général pour l'ensemble de ma page */
+body{
+	background-color:black;
+	width:100%;
+	margin:0;
+    padding:0;
+    overflow-x: hidden
+    
+}
+
+/* Style pour le menu de la barre de navigation dans la section "lien" */
+.recherche{
+	justify-content: left;
+	background-color: black;
+    position: absolute;
+    left:50%;
+	top:2%; 
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    text-transform: uppercase;
+    width:100%;
+    padding-top:1.2%;
+    font-weight: bold; 
+    display:flex;
+	gap:80%;
+    position: fixed;	
+}
+header li{
+    list-style:none;
+}
+header .menu {
+    background-color: black;
+    border: none;
+    cursor: pointer;
+	width: 100%;
+    display: block;
+    margin:auto;
+}
+
+.menu:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+.lien {
+    position: relative;
+    display: inline-block;	
+}
+
+.sous-classe {
+    display: none;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),url("../img/fondmenu.png");
+    background-attachment: fixed;
+    width: 200px;
+	position: absolute;
+  
+}
+
+.sous-classe a {
+    color: rgb(248, 247, 247);
+    font-family:"navigation";
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+	font-size: smaller;
+}
+
+.lien:hover .sous-classe{
+    display: block;
+}
+
+.sous-classe a:hover{
+    transition: 0.2s;
+	border-radius:5px;
+    box-shadow: .6em .6em 6em rgb(245, 245, 245);	
+    transform:scale(0.8);	
+}
+
+#nom{
+    color:white;
+    text-decoration: none;
+    font-family: "navigation";
+	top:10%;	
+}
+
+/* Style pieds de page*/
+#bas p{
+    text-transform: uppercase;
+    padding: 2%;
+    text-align: center;
+    color:white;
+    font-family: "navigation";
+  }
+
+  #fin{
+  background-color: rgb(2, 2, 2);
+  font-size: smaller;
+  padding:0;
+  font-family: "paragraphe";
+  }
+
+/* Style de la fleche*/
+.fleche,
+.fleche:before{
+    position: absolute;
+    right: 5%;
+    top:70%;
+}
+    
+  
+.fleche{
+    width: 40px;
+    height: 40px;
+    margin: -20px 0 0 -20px;
+    transform: rotate(45deg);
+    border-left: none;
+    border-top: none;
+    border-right: 2px #fff solid;
+    border-bottom: 2px #fff solid;
+}
+    
+.fleche:before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    left:50%;
+    margin: -10px 0 0 -10px;
+    border-left: none;
+    border-top: none;
+    border-right: 1px #fff solid;
+    border-bottom: 1px #fff solid;
+} 
+
+/* Style global de la barre de navigation sous 768px */
+@media (max-width: 768px) {    
+    .recherche {
+        gap: 5%;
+    }
+    .menu {
+        width:10%;
+    }
+ }
+ /* Style de la police d'écriture personnalisées */
+@font-face {
+    font-family: "titre";
+    src: url("../polices/Fonts/police.woff");
+}
+
+@font-face {
+    font-family: "paragraphe";
+    src: url("../polices/Fonts/titre.woff");
+}
+
+ @font-face {
+    font-family: "navigation";
+    src: url("../polices/Fonts/introrustg-base2line.woff");
+}
+
+@font-face {
+    font-family: "titre2";
+    src: url("../polices/Fonts/acherus_militant_1_-_bold.otf.woff");
+}
+
+@font-face {
+    font-family: "sous-titre";
+    src: url("../polices/Fonts/dragon_serial-regular.woff");
+}
+
+@font-face {
+    font-family: "paragraphe-texte";
+    src: url("../polices/Fonts/ContaxSans55Reg.woff");
+}
+
+@font-face {
+    font-family: "titre-texte";
+    src: url("../polices/Fonts/gascogne_serial-regular.woff");
+}
+
+@font-face {
+    font-family: "paragraphetexte";
+    src: url("../polices/Fonts/acre-medium.woff");
+}
+
+

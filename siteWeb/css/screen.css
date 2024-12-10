@@ -1,0 +1,32 @@
+
+
+/* Style des paragraphes de la page */
+p{
+
+	color:white;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-family: "titre2";
+	margin-top: 10%;
+}
+
+/* Style des liens de la page */
+ a{
+	color:white;
+	font-family: "paragraphetexte";
+}
+
+/* Style général des liens et des paragraphes de la page */
+aside{
+
+	border: 1px solid black;
+	text-align:center;
+	margin:auto;
+	height:auto;
+	background-image:linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),url("../img/lien.jpg");
+}
+
+
+
+	
+	

@@ -1,0 +1,621 @@
+/* Style général de la page pour la couleur */
+body{
+  background-color:rgba(27, 27, 27);
+}
+
+/* Style de la frise chronologique */
+.frisenav {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px; 
+  background-color:rgba(27, 27, 27, 0.4);
+  margin-bottom: 5%;
+}
+
+/* Style pour chaque événement de la frise */
+.evenement {
+  background-color:rgb(252, 251, 251,0.6);
+  border-left: 4px solid #505253;
+  padding: 7px;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.evenement:hover {
+  transition: 0.2s;
+  transform: scale(1.1);
+  box-shadow: 5px 5px 2px 2px rgb(168, 168, 168);
+}
+.evenement::before {
+  content: attr(data-date);
+  position: absolute;
+  left: -35px;
+  top: 10px;
+  background-color: #434344;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 100%;
+  font-family: "paragraphe-texte";
+}
+
+.frisenav a{
+  padding:6%;
+  font-size: 120%;
+  text-decoration: none;
+  color:black;
+  text-transform: uppercase;
+  font-family: "sous-titre";
+}
+
+/* Style de la section détaillée de la frise */
+.frise{
+  width:100%;
+  background-color:rgba(27, 27, 27, 0.4);
+  color:#fff;
+  padding:30px 20px;
+  box-shadow:0px 0px 10px rgba(0, 0, 0, 0.5);
+  padding-bottom: 0;
+}
+
+.frise ul{
+  list-style-type:none;
+  border-left:2px solid rgb(87, 87, 87,0.4);
+  padding:10px 5px;
+}
+
+.frise ul li{
+  position:relative;
+  cursor:pointer;
+  transition:0.2s;
+  padding:20px 20px;
+}
+
+/* Styles spécifiques pour les dates, images et paragraphes */
+.frise .date1{
+  display: block;
+  margin:auto;
+  text-align: center;
+  font-size: 250%;
+  color:rgb(128, 128, 78);
+  font-family: "titre";
+  margin-top:10%;
+  font-family: "titre-texte";
+}
+
+.frise .date2{
+  display: block;
+  margin:auto;
+  text-align: center;
+  font-size: 250%;
+  color:rgb(128, 128, 78);
+  font-family: "titre";
+  margin-bottom: 2%;
+}
+
+.frise .image1{
+  opacity:0.6;
+  filter: grayscale(80%);
+  width:30%;
+  border-radius: 10%;
+}
+
+.frise .sous-classe1{
+  font-size: 90%;
+  text-align: center;
+  font-family: "paragraphetexte";
+}
+
+/* Styles pour les différents éléments dans la frise */
+.frise ul #classe1{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url("../img/frise.jpg");
+  background-size: contain;
+  background-attachment: fixed;
+  padding-bottom: 20%;
+}
+
+.frise ul li .paragraphe #sous-classe1{
+  text-align: center;
+}
+
+.frise ul li img #image1{
+  display: block;
+}
+
+.frise #classe2{
+  background-color:#011515;
+  padding-bottom: 15%;
+  padding-right:5%;
+}
+
+.frise .charlie .image1{
+  float:left;
+}
+
+.frise #classe2 h2{
+  font-size: 220%;
+  color:#7f804e;
+  font-family: "titre-texte";
+}
+
+.frise #classe2 h3{
+  color:rgba(255, 251, 251, 0.6);
+  font-family: "sous-titre";
+}
+
+.frise #classe2 p{
+  color:rgba(255, 251, 251, 0.6);
+  font-size: small;
+  font-family: "paragraphetexte";
+}
+
+.frise #classe2 .sous-titre{
+  font-size: small;
+  position:relative;
+  left:30%;
+  border-left: 1px solid white;
+  padding-left: 5%;
+}
+
+.frise #classe2 .paragraphe{
+  text-align:center;
+  margin-left:35%;
+  margin-top: 20%;
+}
+
+.frise #classe2 .paragraphe video{
+  width:50%;
+}
+
+.frise #classe2 .paragraphe video:hover{
+  transition:1s;
+  transform:scale(1.2);
+  margin-top:5%;
+  margin-bottom: 5%;
+}
+
+.frise #classe3{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url("../img/fondhistoire.jpg");
+  padding-bottom: 15%;
+  padding-right:5%;
+  background-size:contain;
+  background-attachment: fixed;
+}
+
+/* Styles pour titres dans certaines classes */
+.frise #classe3 h2,#classe5 h2,#classe6 h2,#classe7 h2,#classe8 h2,#classe9 h2,#classe10 h2,#classe11 h2{
+  text-align:center;
+  font-size: 220%;
+  color:#7f804e;
+  font-family: "titre-texte";
+}
+
+/* Styles pour les sous-titres dans certaines classes */
+.frise #classe3 h3,#classe5 h3,#classe6 h3,#classe7 h3,#classe8 h3,#classe9 h3,#classe10 h3,#classe11 h3{
+  color:rgba(255, 251, 251, 0.6);
+  text-align: center;
+  font-family: "sous-titre";
+}
+
+/* Styles pour les paragraphes dans certaines classes */
+.frise #classe3 p,#classe5 p,#classe6 p,#classe7 p,#classe8 p,#classe9 p,#classe10 p,#classe11 p{
+  color:rgba(255, 251, 251, 0.6);
+  text-align: center;
+  font-size: small;
+  font-family: "paragraphetexte";
+}
+
+/* Styles pour les parties spécifiques de la frise */
+.frise #classe4 {
+  margin-bottom: 5%;
+  padding:0;
+  padding-top: 5%;
+}
+
+.frise #classe4 #video-duc {
+  min-width: 70%;
+  min-height: 100%;
+  display: block;
+  margin:auto;
+}
+
+.frise #classe4 .texte-duc {
+  position: absolute;
+  bottom: 0;
+  top:70%;
+  left:15%;
+  background: rgba(0, 0, 0, 0.5);
+  color: hsl(0, 0%, 95%);
+  width: 65%;
+  padding-right: 5%;
+}
+
+.frise #classe4 .texte-duc h1{
+  font-size: 150%;
+  color:rgba(252, 252, 252, 0.6);
+  font-family: "titre-texte";
+}
+
+.frise #classe4 .texte-duc p{
+  font-size: small;
+  text-align: left;
+  font-family: "paragraphetexte";
+}
+
+#bouton-duc {
+  width: 200px;
+  font-size: 15px;
+  padding: 15px;
+  border: none;
+  border-radius: 5%;
+  background: rgba(20, 20, 20, 0.5);
+  color: #fff;
+  cursor: pointer;
+  font-family: "titre2";
+}
+
+#bouton-duc:hover {
+  transition:0.5s;
+  transform: scale(1.2);
+  box-shadow: 1px 1px 1px black;
+  background: rgb(206, 203, 203,0.5);
+  color: black;
+  margin-left:2%;
+}
+
+#classe5 img{
+  display: block;
+  margin:auto;
+}
+
+#classe5{
+  background-color: rgb(26, 41, 41,0.4);
+  margin-top: 5%;
+}
+
+.auteurs .auteursbo{
+  display:grid;
+  grid-template-columns: 1fr;
+  justify-content: flex-start;
+  align-items: start;
+}
+ 
+.auteurs .auteursbo2{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap:5%;
+   margin: 5%;
+}
+ 
+.auteurs .auteursbo3{
+   display: grid;
+   grid-template-columns: 1fr;
+   background-color: rgba(17, 17, 17, 0.4);
+   padding-left:0%;
+   padding-top:9%;
+   margin-top: 20%;
+}
+
+.paragraphe audio{
+  width:50%;
+  display: block;
+  margin: auto;
+  background-color:rgb(222, 226, 226);
+}
+
+.paragraphe audio:hover{
+  transition: 1s;
+  transform: scale(1.2);
+  background-color: black;
+}
+ 
+.auteurs img{
+   display: block;
+   margin: auto;
+   align-items: start;
+}
+
+.auteurs img:hover{
+  transition:1s;
+  transform:scale(1.2);
+  box-shadow: 1px 1px 1px white;
+}
+  
+.auteurs .auteursbo3 img{
+  width:40%;
+  height:auto;
+}
+ 
+.auteurs .auteursbo3 a{
+   text-align: center;
+   color:white;
+   font-family: "paragraphe";
+   text-decoration: none;
+   text-transform: uppercase;
+   border:1px solid rgba(49, 18, 36, 0.3);
+   background-color: rgba(49, 18, 36, 0.3);
+   padding:2%;
+   width:40%;
+   margin:auto;
+   margin-bottom:15%;
+}
+ 
+.auteurs .auteursbo3 a:hover{
+   transition: 0.3s;
+   text-shadow: 1px 1px rgb(100, 53, 53);
+   transform: scale(1.5);
+   box-shadow: 1px 1px 1px 1px rgba(20, 15, 46, 0.3);
+}
+
+.frise ul #classe7{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url("../img/camera.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-top:5%;
+  padding: 0;
+  padding-top: 15%;
+  padding-bottom: 10%;
+}
+
+#classe8{
+  background-color: rgb(26, 41, 41,0.2);
+  padding:0;
+  padding:10%;
+}
+
+.frise #classe9 .texte-film {
+  position: absolute;
+  bottom: 0;
+  top:68%;
+  width:98%;
+  background: rgba(0, 0, 0, 0.5);
+  color: hsl(0, 0%, 95%);
+  padding-right: 5%;
+}
+
+.frise #classe9 #video-film {
+  min-width: 70%;
+  min-height: 100%;
+  display: block;
+  margin:auto;
+}
+
+#classe10{
+  background-color: rgb(26, 41, 41,0.2);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding:2%;
+}
+
+#classe10 img{
+  display: block;
+  margin: auto;
+  width: 90%;
+  border-radius: 10%;
+}
+
+#classe11{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url("../img/rocky.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding:10%;
+}
+
+.paragraphe img{
+  width:20%;
+  
+}
+
+.paragraphe:hover{
+  text-shadow: 20px 20px 10px rgba(255, 255, 255, 0.973);
+}
+
+
+/* Styles pour les dates des différentes parties de la frise */
+.frise #classe1:before{
+  position:absolute;
+  content: "→";
+  width:70px;
+  height:20px;
+  background-color:rgba(158, 155, 155, 0.4);
+  left:-10px;
+  top:50px;
+  transition:.5s;
+}
+
+.frise #classe2:before{
+  position:absolute;
+  content: "1895 →";
+  width:70px;
+  height:20px;
+  background-color:#343434;
+  color:white;
+  left:-10px;
+  top:50px;
+  transition:.5s;
+}
+
+.frise #classe3:before{
+  position:absolute;
+  content: "1896 →";
+  width:70px;
+  height:20px;
+  background-color:#343434;
+  left:-10px;
+  top:50px;
+  transition:.5s;
+}
+
+.frise #classe4:before{
+  position:absolute;
+  content: "1908 →";
+  width:70px;
+  height:20px;
+  background-color:#343434;
+  left:-10px;
+  top:50px;
+  transition:.5s;
+}
+
+.frise #classe5:before{
+  position:absolute;
+  content: "1910 →";
+  width:70px;
+  height:20px;
+  background-color:#343434;
+  left:-10px;
+  top:50px;
+  transition:.5s;
+}
+
+.frise #classe6:before{
+  position:absolute;
+  content: "1920 →";
+  width:70px;
+  height:20px;
+  background-color:#343434;
+  left:-10px;
+  top:50px;
+  transition:.5s;
+}
+
+.frise #classe7:before{
+  position:absolute;
+  content: "1927 →";
+  width:70px;
+  height:20px;
+  background-color:#343434;
+  left:-10px;
+  top:20px;
+  transition:.5s;
+}
+
+.frise #classe8:before{
+  position:absolute;
+  content: "1930 →";
+  width:70px;
+  height:20px;
+  background-color:#343434;
+  left:-10px;
+  top:50px;
+  transition:.5s;
+}
+
+.frise #classe9:before{
+  position:absolute;
+  content: "1945 →";
+  width:70px;
+  height:20px;
+  background-color:#343434;
+  left:-10px;
+  top:50px;
+  transition:.5s;
+}
+
+.frise #classe10:before{
+  position:absolute;
+  content: "1989 →";
+  width:70px;
+  height:20px;
+  background-color:#343434;
+  left:-10px;
+  top:50px;
+  transition:.5s;
+}
+
+.frise #classe11:before{
+  position:absolute;
+  content: "2023 →";
+  width:70px;
+  height:20px;
+  background-color:#343434;
+  left:-10px;
+  top:50px;
+  transition:.5s;
+}
+
+/*Style du pied de page */
+#fin{
+  background-color:rgba(27, 27, 27, 0.4);
+}
+
+/*Style global de la page sous 950px */
+@media (max-width: 950px) {
+  .frise #classe4 #video-duc{
+    width:90%;
+  }
+
+  .frise #classe9 #video-film{
+    width:90%;
+  }
+}
+
+/*Style global de la page sous 700px */
+@media (max-width: 700px) {
+
+  .frise #classe2 .paragraphe video{
+    width:80%;
+  }
+  .auteurs .auteursbo2{
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 20%;
+  }
+
+}
+
+/*Style global de la page sous 600px */
+@media (max-width: 600px) {
+  .frise #classe4 .texte-duc{
+    top:45%;
+    bottom:0%;
+  }
+
+  .frise #classe9 .texte-film {
+    top:55%;
+    left:0;
+    width:90%;
+  }
+
+}
+
+/*Style global de la page sous 400px */
+@media (max-width: 400px) {
+
+ 
+
+  .frise #classe2 .paragraphe video{
+    width:100%;
+  }
+
+  .frise #classe4 .texte-duc{
+    visibility: hidden;
+  }
+
+  .auteurs .auteursbo2{
+    grid-template-columns: 1fr;
+  }
+
+  .auteurs .auteursbo2{
+    gap:0%;
+    margin:0;
+  }
+
+  .auteurs .auteursbo{
+    margin-bottom: 10%;
+  }
+
+  .frise #classe9 .texte-film {
+    visibility: hidden;
+  }
+
+  #classe10{
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
