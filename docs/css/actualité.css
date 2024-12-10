@@ -1,0 +1,395 @@
+/*Style global de la page */
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url("../img/actualités/fond.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*Style du titre principal de la page*/
+#haut{
+    background-color: rgba(34, 33, 33, 0.3);
+    color: white;
+    padding: 100px;
+    text-align: center;
+    font-family: "titre";
+}
+
+/*Style du menu*/
+main{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap:1%;
+}
+
+/*Style des actualités du mois */
+.actus {
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr;
+    /* Ajouter des styles pour h2 et autres éléments ici */
+    background-color: rgb(36, 35, 35,0.7);
+}
+
+.actus h2 {
+
+    color:white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: larger;
+    border:solid 1px rgb(10, 10, 26,0.8);
+    background-color: rgb(10, 10, 26,0.8);
+    padding:2%;
+    font-family: "sous-titre";
+}
+
+/*Style des sorties de bo */
+.sidebar h2{
+    text-transform: uppercase;
+    font-size: larger;
+    color:white;
+    text-align: center;
+    margin-bottom: 15%;
+    font-family: "sous-titre";
+}
+
+/*Style des différentes parties des actualités du mois */
+.actus .event {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    margin-top: 5%;
+}
+
+/*Style des différentes parties des sorties de bo */
+.sidebar .event{
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+/*Style des différentes images des actualités du mois */
+.actus .event img {
+    margin-right: 20px;
+    width: 20%; /* Ajuster selon vos besoins */
+    height: auto;
+    float: left;
+}
+
+.actus .event img:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+/*Style des différentes images des sorties de bo */
+.sidebar .event img{
+    margin-right: 20px;
+    width: 11%; /* Ajuster selon vos besoins */
+    height: auto;
+    float: left;
+}
+
+/*Style des titres, des sous-titres et des paragraphes des actualités du mois */
+.actus .event-info h3 {
+    margin: 0;
+    color: #ffffff;
+    font-family: "titre2";
+}
+
+.actus .event-info p {
+    margin: 0;
+    color: #f8fcff;
+    font-family: "paragraphetexte";
+}
+
+.actus .event-info h5 {
+    margin: 0;
+    color: #adafb1;
+    font-style: italic; 
+    margin-top:2%;
+    margin-bottom:2%;
+}
+
+
+.actus .event-info .resume {
+    margin-top: 3%;
+    color: #7abdf0;
+    text-align: left;
+    font-size: small;
+}
+
+/*Style des titres,sous-titres, paragraphes des sorties de BO */
+.sidebar {
+    float: right;
+    padding: 20px;
+    box-sizing: border-box;
+    /* Styles pour la sidebar */
+    background-color: rgb(36, 35, 35,0.7);
+}
+
+.sidebar h3{
+    color:#695bff;
+    font-size: 70%;
+    text-transform: uppercase;
+    font-family: "titre2";
+}
+
+.sidebar p{
+    color:white;
+    font-size: small;
+    font-family: "paragraphetexte";
+}
+
+/*Style de la partie, des titres et paragraphes des remises de prix dans sorties BO */
+.sidebar .prix h5{
+    color:grey;
+    font-style: italic;
+    text-decoration: underline;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.sidebar .prix h3{
+    color:white;
+    font-size: medium;
+    font-style: italic;
+    text-transform:uppercase;
+    padding:0;
+    margin:0;
+    text-align: left;
+}
+
+.sidebar .prix p{
+    color:rgb(160, 158, 158);
+    font-size: small;
+    padding:0;
+    margin:0;
+    text-align: left;
+    margin-bottom: 5%;
+}
+
+.sidebar .prix img{
+    width:80%;
+    display: block;
+    margin: auto;
+}
+
+/*Style des images de Spotify */
+.playlist img{
+    width:90%;
+    border-radius: 5px 5px 5px 5px;
+    display: block;
+    margin: auto;
+}
+
+.playlist figcaption{
+    color:white;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-size: small;
+}
+
+/*Style de l'actualité sur le cinéma */
+.musiquefilm{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.musiquefilm h2, .actus2 h2{
+    color:white;
+    text-align: center;
+    margin-top: 5%;
+    text-transform: uppercase;
+    margin-bottom: 5%;
+    border:solid 1px rgb(10, 10, 26,0.8);
+    background-color: rgb(10, 10, 26,0.8);
+    padding:3%;
+    font-family: "sous-titre";
+}
+
+.cine{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:2%;
+}
+
+.cine img{
+    width:80%;
+    display: block;
+    margin: auto;
+}
+
+.cine img:hover {
+    transition:0.5s;
+    transform: scale(1.15);
+    margin-bottom: 8%;
+}
+
+.cine .cinemaactus h5{
+    color:rgb(117, 117, 117);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 70%;
+}
+
+.cine .cinemaactus h3{
+    color:white;
+    text-align: center;
+    font-size: medium;
+    font-family: "titre2";
+}
+
+.cine .cinemaactus p{
+    color:white;
+    text-align: center;
+    font-size: small;
+    margin:20%;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: "paragraphetexte";
+}
+
+/*Style des coup de coeurs de BO*/
+.actus2 .actusbo ul{
+    list-style: none;
+    background-color: rgb(236, 233, 233,0.1);
+    border-radius: 10px 10px 10px 10px;
+    
+}
+
+.actus2 .actusbo li{
+    color:white;
+    font-size: medium;
+    border-bottom: solid 1px grey;
+    text-align: center;
+    padding:5%;
+    font-family: "titre2";
+}
+
+.actus2 .texte{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.actus2 .bomusique ul{
+    list-style: none;
+    
+}
+
+.actus2 .bomusique li{
+    border-bottom: solid 1px grey;
+    padding:2%;
+    padding-bottom: 4%;
+}
+
+.actus2 .bomusique audio{
+    width:90%;
+    background-color: rgb(10, 10, 104);
+    border-radius: 10px 10px 10px 10px;
+}
+
+.actus2 .bomusique audio:hover{
+    transition: 0.3s;
+    background-color: rgb(28, 28, 248);
+    transform: scale(1.1);
+}
+
+.actus2 h2{
+    margin-bottom: 0;
+}
+
+/*Style global de la page sous 1400px */
+@media (max-width: 1400px) {
+    .sidebar .event img{
+        width:20%;
+    }
+}
+
+@media (max-width: 900px) {
+    .sidebar .event img {
+        width:40%;
+    }
+
+    .actus2 h2{
+        margin-top:13%;
+    }
+
+    .actus2 .bomusique li {
+        padding:1.5%;
+    }
+
+}
+
+/*Style global de la page sous 650px */
+@media (max-width: 650px) {
+    .sidebar .event img {
+        width:50%;
+    }
+
+    .actus h2, .actus2 h2, .musiquefilm h2{
+        font-size:80%;
+    }
+
+    .playlist img {
+        width:100%;
+    }
+
+    .actus2 .bomusique li {
+        padding:4%;
+    }
+}
+
+/*Style global de la page sous 500px */
+@media (max-width: 500px) {
+    .cine {
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 40%;
+    }
+
+    .sidebar .event img {
+        width:80%;
+    }
+}
+
+@media (max-width: 400px) {
+    .actus2 h2 {
+        margin-top:25%;
+    }
+
+    .actus .event img {
+        width:80%;
+    }
+}
+
+/*Style global de la page sous 345px */
+@media (max-width: 345px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .actus .event img {
+        width:80%;
+    }
+
+    .actus .event img {
+        width:50%;
+    }
+
+    .sidebar .event img{
+        width:20%;
+    }
+
+    .musiquefilm h2{
+        margin-top: 25%;
+    }
+
+    .actus2 h2{
+        margin-top: 40%;
+    }
+
+    .actus2 .texte{
+       grid-template-columns: 1fr;
+    }
+}

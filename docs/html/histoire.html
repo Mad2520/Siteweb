@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Histoire BO</title>
+        <meta name="author" content="audrain221" />
+        <link rel="stylesheet" href="../css/communs.css" /> 
+        <link rel="stylesheet" href="../css/histoire.css" />
+    </head>
+    <body>
+      <!-- en-tête de ma page : commun pour toutes les pages -->
+      <header>
+        <nav class="recherche">
+            <div class="lien">
+                <button class="menu" tabindex="0"><img src="../img/menu2.png"
+                    alt="menu"/></button>
+            <div class="sous-classe">
+                <a href="../accueil.html" tabindex="0">Accueil</a>
+                <a href="histoire.html" tabindex="0">Histoire</a>
+                <a href="meilleursBO.html" tabindex="0">Meilleurs B.O</a>
+                <a href="autres.html" tabindex="0">Autres Catégories</a>
+                <a href="actualite.html" tabindex="0">Actualité</a>
+                <a href="lien.html" tabindex="0"> Source </a>
+            </div>
+            </div>
+                <a id="nom" href="../accueil.html" tabindex="0">VibraBO</a> <!-- lien vers l'accueil du site par le nom du site -->
+        </nav>
+    </header>
+
+      <!-- frise chronologique qui résume ma page et emmène vers les parties de ma page -->
+      <nav class="frisenav">
+         <!-- Événements de la frise chronologique -->
+        <div class="evenement" data-date="1895">
+          <a href="#classe1" tabindex="0">Le cinema muet</a>
+        </div>
+        <div class="evenement" data-date="1896">
+            <a href="#classe2" tabindex="0">L'arrivée des bandes originales et Thomas Edison</a>
+        </div>
+        <div class="evenement" data-date="1908">
+          <a href="#classe3" tabindex="0">La première bande originales</a>
+        </div>
+        <div class="evenement" data-date="1910">
+          <a href="#classe4" tabindex="0">Catalogue musicaux</a>
+        </div>
+        <div class="evenement" data-date="1920">
+          <a href="#classe5" tabindex="0">Les musiques originales</a>
+        </div>
+        <div class="evenement" data-date="1927">
+          <a href="#classe6" tabindex="0">Cinéma parlant</a>
+        </div>
+        <div class="evenement" data-date="1930">
+          <a href="#classe7" tabindex="0">Classiscisme hollywoodien</a>
+        </div>
+        <div class="evenement" data-date="1945">
+          <a href="#classe8" tabindex="0">L'après guerre</a>
+        </div>
+        <div class="evenement" data-date="1989">
+          <a href="#classe9" tabindex="0">Musique numérique</a>
+        </div>
+        <div class="evenement" data-date="2023">
+          <a href="#classe10" tabindex="0" >Musique moderne</a>
+        </div>
+      </nav>
+    
+      <!-- flèche pour indiquer un autre contenu de page -->
+      <div class="fleche"></div>
+
+      <!-- Contenu principal : frise chronologique détaillée -->
+      <main class="frise">
+        <ul>
+          <!-- Détail des périodes historiques des BO -->
+          <li id="classe1">
+            <span class="date1">L'histoire des bandes originales,<br> un tournant dans l'histoire du cinéma</span>
+            <div class="paragraphe">
+              <p class="sous-classe1">
+              Au cinéma, les musiques sont essentielles car elles sont reliées au images, mais chaque contient ses propres compositions intimement liés à son histoire. Des musiques sont donc crée spécialement pour raconter l'histoire de ces films. Les bandes originales sont aussi importantes que les images car elles permettent de transmettre des émotions et d'appuyer et d'accentuer celles déjà transmise par les images. Voici donc son histoire. </p>
+            </div>
+          <li id="classe2">
+            <div class="charlie">
+              <img class="image1" src="../img/Charlie.jpg"
+                alt="charlie chaplin"/>
+                <div class="paragraphe">
+                  <h2> 1895-1929</h2>
+                  <h3>Le cinéma muet</h3>
+                  <p>
+                  Durant de nombreuses années, le cinéma était muet,plutôt sans sons, sans musiques. La musique était alors joué en direct durant la diffusion. Donc il n'existait pas de bandes originales. 
+                  </p>
+                  <video controls autoplay loop muted>
+                  <source src="../video/chaplin.mp4" type="video/mp4" /></video>
+            </div>
+          </div>
+        </li>
+        <li id="classe3">
+          <h2>1891-1896</h2>
+            <div class="paragraphe">
+              <h3>L'arrivée des bandes originales et Thomas Edison</h3>
+              <p>
+              Edison est un inventeur, scientifique et industriel  américain né en 1847 et mort en 1931. Il est alors l'inventeur de la General, l'une des premières puissances industrielles mondiales, il fut aussi un inventeur prolifique. 
+              C'est un pionner de l'électricité,diffuseur,vulgarisateur. Et surtout, il participa à l'invention du cinéma et de l'enregistrement du son.<br> Durant 1891 Thomas Edison présentait au public les premiers films du cinéma. Il rêver alors de coupler l'image et le son.<br>
+              Mais ce ne sera qu'en 1892 que les premières musiques de films seont joués. Emile Reynaud avait inventé le dessin animé avec son théâtre optique. Il avait compris qu'en plus de ces dessins animés il devait ajouté un support rythmiques et donc ajouté de la musique. Il convint alors un homme nommé Gaston Paulin d'écrire des musiques spécifiques à ces dessins animés. Ce fut les premieres réels musique de film malgré quelles n'est jamais été enregistrées puisqu'il les jouaient au piano durant la diffusion.
+              </p>
+            </div>
+        </li>
+        <li id="classe4">
+          <video autoplay muted loop id="video-duc">
+          <source src="../video/duc.mp4" type="video/mp4">
+          </video>
+            <div class="texte-duc">
+              <h1>La première bande originale</h1>
+              <p>Le compositeur Camille Saint-Saens accepte d'écrire pour la société de production Le Film d'art.<br> Ce fut la première musique originale pour un film, la premère réelle Bande Originale : le film muet L'assassinat du duc de Guise, réalisé par André Calmettes et Charles Le Bargy.</p>
+              <button id="bouton-duc">Video</button>
+            </div> 
+        </li>
+        <li id="classe5">
+          <h2>1910</h2>
+            <div class="paragraphe">
+              <h3>Catalogue musicaux</h3>
+              <p>
+                Dans les années 1910, rares sont les partitions écrites sur mesure pour un film. On recourt souvent, surtout dans les petites salles, à des recueils de morceaux originaux ou d'arrangements tout préparés. Parmi ceux-ci figurent les registres de Paul Fosse pour le Gaumont Palace (1911-1928), les Sam Fox Moving Picture Music Volumes (1913), la Kinothek (1919-1933) de Giuseppe Becce ou encore les Motion Pictures Moods for Pianists and Organists (1924) d'Ernö Rapée, adaptées à 52 atmosphères et situations différentes.
+              </p>
+              <img src="../img/classe4.jpg"
+              alt="fond-musicaux"/>
+            </div>
+        </li>
+        <li id="classe6">
+          <h2>1920</h2>
+            <div class="paragraphe">
+              <h3>Les musiques originales</h3>
+              <p>
+              Dans les années 1920, les musiques de film ce multiplie et de nombreux auteurs se mettent à écrire pour le cinéma français.
+              </p>
+              <div class="auteurs">
+                <section class="auteursbo">
+                  <article class="auteursbo2">
+                    <div class="auteursbo3">
+                      <img src="../img/arthur.jpg" alt=" Arthur Honegger"/> 
+                      <audio controls>
+                      <source src="../audio/arthur.mp3" type="audio/mp3">
+                      </audio>
+                      <a href="https://www.youtube.com/watch?v=l7nzodXfVsg">Arthur Honegger</a>
+                    </div>
+                    <div class="auteursbo3">
+                      <img src="../img/Eric.jpg" alt=" Eric Satie"/> 
+                      <audio controls>
+                      <source src="../audio/eric.mp3" type="audio/mp3">
+                      </audio>
+                      <a href="https://www.youtube.com/watch?v=Qr4azoVLqL0">Eric Satie</a>
+                    </div>
+                    <div class="auteursbo3">
+                      <img src="../img/henrie.jpg" alt=" Henri Rabaud"/> 
+                      <audio controls>
+                      <source src="../audio/henrie.mp3" type="audio/mp3">
+                      </audio>
+                      <a href="https://www.youtube.com/results?search_query=Henri+Rabaud+miusique+extrait">Henri Rabaud</a>
+                    </div>
+                    <div class="auteursbo3">
+                      <img src="../img/darius.jpg" alt=" Darius Milhaud"/> 
+                      <audio controls>
+                      <source src="../audio/darius.mp3" type="audio/mp3">
+                      </audio>
+                      <a href="https://youtu.be/-F63xd_htIs?si=4c69LpZEUTFIzoWA">Darius Milhaud</a>
+                    </div>
+                    <div class="auteursbo3">
+                      <img src="../img/flo.jpg" alt=" Florent Schmitt"/> 
+                      <audio controls>
+                     <source src="../audio/flo.mp3" type="audio/mp3">
+                     </audio>
+                    <a href="https://youtu.be/DWuxOwJUaXU?si=MbtgEmQp-9A3ihTg">Florent Schmitt</a>
+                    </div>
+                    <div class="auteursbo3">
+                      <img src="../img/paul.jpg" alt=" Paul Hindemith"/> 
+                      <audio controls>
+                      <source src="../audio/paul.mp3" type="audio/mp3">
+                      </audio>
+                      <a href="https://youtu.be/ciNW7650Y6M?si=gP1d70ntSPZvlAoF">Paul Hindemith</a>
+                    </div>
+                  </article>
+                </section>
+              </div>
+            </div>
+        </li>
+        <li id="classe7">
+          <h2>1927</h2>
+            <div class="paragraphe">
+              <h3>Cinéma parlant</h3>
+              <p>
+              Dans les années 1927, le cinéma parlant apparait. La musique dans les années précédentes jouaient direct sur scène est désqrmais enregistrée et fixée sur un support. C'est donc la naissance de la bande originale proprement dite.
+              </p>
+            </div>
+        </li>
+        <li id="classe8">
+          <h2>1930</h2>
+            <div class="paragraphe">
+              <h3>Classiscisme hollywoodien</h3>
+              <p>
+              Peu après la sortie du Chanteur de jazz, qui marque l'arrivée du cinéma parlant, commence la période "classique" de l'âge d'or d'Hollywood. La musique est alors omniprésente et ont pour fonction une fonction illustrative.
+              </p>
+            </div>
+        </li>
+        <li id="classe9">
+          <h2>1945</h2>
+          <video autoplay muted loop id="video-film">
+          <source src="../video/film.mp4" type="video/mp4">
+          </video>
+            <div class="texte-film">
+              <h3>L'après guerre</h3>
+              <p>
+               Dans les années 1945, le cinéma et surtout la musique de film prennent un autre tournant. Les bandes originales sont désormais plus ciblée et moins omniprésente. De nouveaux genres apparaissent. Tout devient alors plus moderne.
+              </p>
+            </div>
+        </li>
+        <li id="classe10">
+          <img src="../img/zimmer.jpg" alt="media ventures"/>
+            <div class="paragraphe">
+              <h2>1989</h2>
+              <h3>Musique numérique</h3>
+              <p>
+              En 1989, Hans Zimmer crée les studios Media Ventures (Remote Control Productions depuis 2003), qui donneront lieu aux plus importantes BO d'Hollywood jusqu'à aujourd'hui et feront naître les compositeurs les plus actifs du moment : John Powell, Klaus Badelt, Harry Gregson-Williams, Steve Jablonsky, Mark Mancina... D'autres comme Trevor Rabin n'y ont pas travaillé mais en sont proches. On parle parfois de "l'écurie Hans Zimmer" ; l'existence de telles structures est sans doute une des raisons de la standardisation des musiques de films hollywoodiennes, où prédominent les musiques d'ambiance (les thèmes ayant une forte identité sont en net repli) et dans lesquelles les textures se ressemblent, l'orchestre adoptant lui-même fréquemment un style électro fait de boucles maintes fois entendues...
+             </p>
+          
+            </div>
+        </li>
+        <li id="classe11">
+          <h2>2023</h2>
+            <div class="paragraphe">
+              <h3>Musique moderne</h3>
+              <p>
+              La musique de film est alors devenu indissociable de l'image et de nombreux réalisateurs lui accordent une place particulière. Certains films sont alors devenu de grands succès come Rocky,...
+              </p>
+            </div>
+        </li>
+      </ul>
+    </main>
+    
+    <!-- Pied de page -->
+      <footer id="bas">
+        <p id="fin"> Copyright Maddie © 2023 </p>
+      </footer>
+    
+  
+    </body>
+    </html>

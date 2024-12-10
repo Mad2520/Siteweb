@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <title>meilleursBO</title>
+        <meta name="author" content="audrain221" />
+        <link rel="stylesheet" href="../css/communs.css" /> 
+        <link rel="stylesheet" href="../css/meilleursBO.css" />
+    </head>
+    <body>
+      <header>
+        <!-- En-tête de la page et navigation -->
+        <nav class="recherche">
+            <div class="lien">
+                <button class="menu" tabindex="0"><img src="../img/menu2.png"
+                    alt="menu"/></button>
+            <div class="sous-classe">
+                <a href="../accueil.html" tabindex="0">Accueil</a>
+                <a href="histoire.html" tabindex="0">Histoire</a>
+                <a href="meilleursBO.html" tabindex="0">Meilleurs B.O</a>
+                <a href="autres.html" tabindex="0">Autres Catégories</a>
+                <a href="actualite.html" tabindex="0">Actualité</a>
+                <a href="lien.html" tabindex="0"> Source </a>
+            </div>
+            </div>
+                <a id="nom" href="../accueil.html" tabindex="0">VibraBO</a> <!-- lien vers l'accueil du site par le nom du site -->
+        </nav>
+    </header>
+
+    <main>
+
+      <!-- Contenu principal de la page -->
+      <h3> Les meilleurs bandes originales</h3>
+       
+      <!-- Bandes originales et dates des meilleures bo -->
+      <section id="frise_chronologique">
+        
+        <!-- Chaque 'div' représente une frise avec des détails sur une bande originale spécifique -->
+        <div class="frise">
+      
+            <div class="fond" style="background-image: url(../img/star.jpg)"></div>
+      
+              <div class="date">
+                <p class="police_date">2019</p>
+              </div>
+  
+              <div class="texte">
+                <h1>Stars Wars</h1>
+                <audio controls>
+                  <source src="../audio/starwars.mp3" type="audio/mp3">
+                  Votre navigateur ne supporte pas l'élément audio.
+              </audio>
+              
+              </div>
+  
+            </div>
+  
+        <div class="frise">
+      
+          <div class="fond" style="background-image: url(../img/interstellar.jpg)"></div>
+      
+            <div class="date">
+              <p class="police_date">2014</p>
+        </div>
+  
+          <div class="texte">
+            <h1 class="titre">Interstellar</h1>
+            <audio controls>
+              <source src="../audio/inter.mp3" type="audio/mp3">
+              Votre navigateur ne supporte pas l'élément audio.
+          </audio>
+          
+          </div>
+  
+        </div>
+  
+        <div class="frise">
+      
+          <div class="fond" style="background-image: url(../img/imp.jpg)"></div>
+      
+          <div class="date">
+          <p class="police_date">2011</p>
+          </div>
+  
+          <div class="texte">
+            <h1 class="titre">drive</h1>
+            <audio controls>
+              <source src="../audio/drivefilm.mp3" type="audio/mp3">
+              Votre navigateur ne supporte pas l'élément audio.
+          </audio>
+          
+          </div>
+  
+        </div>
+
+  
+        <div class="frise">
+    
+          <div class="fond" style="background-image: url(../img/lalaland2.jpg)"></div>
+    
+          <div class="date">
+            <p class="police_date">2016</p>
+          </div>
+
+          <div class="texte">
+            <h1 class="titre">Lalaland</h1>
+            <audio controls>
+              <source src="../audio/lala.mp3" type="audio/mp3">
+              Votre navigateur ne supporte pas l'élément audio.
+          </audio>
+          
+          </div>
+
+        </div>
+      </section>
+
+      <div class="video">
+        <section class="video-bo">
+           <!-- Section détaillant chaque film et sa bande originale -->
+          <article class="image-bo">
+            <div class="sous-image">
+              <section class="image-film">
+                <img src="../img/star2.jpg" alt="Star wars"/>
+              </section>
+             <section class="sousimage-texte">
+              <div class="sousimagefilm">
+                <img src="../img/starswars.jpg" alt="Star wars"/>
+              </div>
+              <div class="sousimagefilm">
+                <img src="../img/starswars2.jpg" alt="Star wars"/>
+              </div>
+              <div class="sousimagefilm">
+                <img src="../img/starswars3.jpg" alt="Star wars"/>
+              </div>
+             </section>
+            <section class="message">
+              <input class="message-texte" type="text" id="avis1" name="avis"  placeholder="Avis :" />
+            </section>
+          </div>
+          </article>
+          <article class="video-bande">
+            <section class="textefilmbo1">
+              <h2> Star wars</h2>
+              <ul>
+                <li> Production : États-Unis </li>
+                <li> Genre : Science-fiction</li>
+                <li> Acteurs principaux : Daisy Ridley, Adam Driver, John Boyega, Oscar Isaac, Ian McDiarmid </li>
+                <li> date de sortie : 2019</li>
+                <li> Film de : J. J. Abrams</li>
+                <li> Durée : 141 minutes </li>
+              </ul>
+            </section>
+            <section class="textefilmbo2">
+              <h5> Résumé :</h5>
+              <p>Un an a passé depuis que Kylo Ren a tué Snoke, le Leader suprême et pris sa place. Bien que largement décimée, la Résistance est prête à renaître de ses cendres. Rey, Poe, Leia et leurs alliés se préparent à reprendre le combat. Mais ils vont devoir faire face à un vieil ennemi : l'empereur Palpatine.</p>
+              <video class="video1" controls autoplay loop muted>
+              <source src="../video/star.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video>
+            </section> 
+          </article>
+        </section>
+      </div>
+
+      <h4> Casting </h4>
+      <div class="casting">
+        <section class="image1">
+          <figure>
+            <img src="../img/carrie.jpg" alt="Carrie Fisher" />
+            <figcaption>Carrie Fisher</figcaption>
+          </figure>
+        </section>
+        <section class="image1">
+          <figure>
+            <img src="../img/mark.jpg" alt="Mark Hamill" />
+            <figcaption class="texte-inversé">Mark Hamill</figcaption>
+          </figure>
+        </section>
+        <section class="image1">
+          <figure>
+            <img src="../img/daisy.jpg" alt="Daisy Ridley" />
+            <figcaption>Daisy Ridley</figcaption>
+          </figure>
+        </section>
+        <section class="image1">
+          <figure>
+            <img src="../img/john2.jpg" alt="John Boyega" />
+            <figcaption class="texte-inversé">John Boyega</figcaption>
+          </figure>
+        </section>
+        <section class="image1">
+          <figure>
+            <img src="../img/adam.jpg" alt="Adam Driver" />
+            <figcaption>Adam Driver</figcaption>
+          </figure>
+        </section>
+      </div>
+
+      <div class="video">
+        <section class="video-bo">
+          <article class="image-bo">
+            <div class="sous-image">
+              <section class="image-film">
+                <img src="../img/inter5.jpg" alt="interstellar"/>
+              </section>
+              <section class="sousimage-texte">
+                <div class="sousimagefilm">
+                  <img src="../img/inter2.jpg" alt="interstellar"/>
+                </div>
+                <div class="sousimagefilm">
+                  <img src="../img/inter3.jpg" alt="interstellar"/>
+                </div>
+                <div class="sousimagefilm">
+                  <img src="../img/inter4.jpg" alt="interstellar"/>
+                </div>
+              </section>
+              <section class="message">
+                <input class="message-texte" type="text" id="avis2" name="avis-film"  placeholder="Avis :" />
+              </section>
+              </div>
+          </article>
+          <article class="video-bande">
+            <section class="textefilmbo3">
+              <h2> interstellar</h2>
+              <ul>
+                <li> Production : États-Unis </li>
+                <li> Genre : Science-fiction, drame </li>
+                <li> Acteurs principaux : Matthew McConaughey, Anne Hathaway, Jessica Chastain</li>
+                <li> date de sortie : 2014</li>
+                <li> Film de : Christopher Nolan</li>
+                <li> Durée : 169 minutes </li>
+              </ul>
+            </section>
+            <section class="textefilmbo2">
+              <h5> Résumé :</h5>
+              <p>Dans un proche futur, la Terre est devenue hostile pour l'homme. Les tempêtes de sable sont fréquentes et il n'y a plus que le maïs qui peut être cultivé, en raison d'un sol trop aride. Cooper est un pilote, recyclé en agriculteur, qui vit avec son fils et sa fille dans la ferme familiale. Lorsqu'une force qu'il ne peut expliquer lui indique les coordonnées d'une division secrète de la NASA, il est alors embarqué dans une expédition pour sauver l'humanité.</p>
+              <video class="video1" controls autoplay loop muted>
+              <source src="../video/interstellar.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video>
+            </section> 
+          </article>
+        </section>
+      </div>
+      <h4> Casting </h4>
+       <div class="casting">
+        <section class="image1">
+          <figure>
+            <img src="../img/matthew.jpg" alt="Matthew.MC" />
+            <figcaption>Matthew Mc </figcaption>
+          </figure>
+        </section>
+        <section class="../image1">
+            <figure>
+              <img src="../img/jess.jpg" alt="Jessica Chastain" />
+              <figcaption class="texte-inversé">Jessica Chastain</figcaption>
+            </figure>
+          </section>
+          <section class="image1">
+            <figure>
+              <img src="../img/anne.jpg" alt="Anne Hathaway" />
+              <figcaption>Anne Hathaway</figcaption>
+            </figure>
+          </section>
+          <section class="image1">
+            <figure>
+              <img src="../img/mac.jpg" alt="Mackenzie Foy" />
+              <figcaption class="texte-inversé">Mackenzie Foy</figcaption>
+            </figure>
+          </section>
+          <section class="image1">
+            <figure>
+              <img src="../img/timo.png" alt="Timothée.ch" />
+              <figcaption>Timothé.Ch</figcaption>
+            </figure>
+          </section>
+        </div>
+
+        <div class="video">
+          <section class="video-bo">
+            <article class="image-bo">
+              <div class="sous-image">
+                <section class="image-film">
+                  <img src="../img/drivefond.jpg" alt="drive"/>
+                </section>
+                <section class="sousimage-texte">
+                  <div class="sousimagefilm">
+                    <img src="../img/drive2.jpg" alt="drive"/>
+                  </div>
+                  <div class="sousimagefilm">
+                    <img src="../img/drive3.jpg" alt="drive"/>
+                  </div>
+                  <div class="sousimagefilm">
+                    <img src="../img/drive4.jpg" alt="drive"/>
+                  </div>
+                </section>
+                <section class="message">
+                  <input class="message-texte" type="text" id="avis3" name="avis-film"  placeholder="Avis :" />
+                </section>
+              </div>
+            </article>
+            <article class="video-bande">
+              <section class="textefilmbo4">
+                <h2> Drive</h2>
+                <ul>
+                  <li> Production : États-Unis </li>
+                  <li> Genre : Thriller, néo-noir </li>
+                  <li> Acteurs principaux : Ryan Gosling, Carey Mulligan, Bryan Cranston </li>
+                  <li> date de sortie : 2011</li>
+                  <li> Film de : Nicolas Winding Refn</li>
+                  <li> Durée : 95 minutes </li>
+                </ul>
+              </section>
+              <section class="textefilmbo2">
+                <h5> Résumé :</h5>
+                <p>Un jeune homme solitaire, The Driver, conduit le jour à Hollywood pour le cinéma en tant que cascadeur et la nuit pour des truands. Ultra professionnel et peu bavard, il a son propre code de conduite. Jamais il n'a pris part aux crimes de ses employeurs autrement qu'en conduisant - et au volant, il est le meilleur !</p>
+                <video class="video1" controls autoplay loop muted>
+                <source src="../video/drive.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video>
+              </section> 
+            </article>
+          </section>
+        </div>
+          <h4> Casting </h4>
+           <div class="casting">
+            <section class="image1">
+              <figure>
+                <img src="../img/ryan.jpg" alt="Ryan Gosling" />
+                <figcaption>Ryan Gosling</figcaption>
+              </figure>
+            </section>
+            <section class="image1">
+                <figure>
+                  <img src="../img/carrey.jpg" alt="Carey Mulligan" />
+                  <figcaption class="texte-inversé">Carey Mulligan</figcaption>
+                </figure>
+              </section>
+              <section class="image1">
+                <figure>
+                  <img src="../img/bryan.jpg" alt="Bryan Cranston" />
+                  <figcaption>Bryan Cranston</figcaption>
+                </figure>
+              </section>
+              <section class="image1">
+                <figure>
+                  <img src="../img/albert.jpg" alt="Albert Brooks" />
+                  <figcaption class="texte-inversé">Albert Brooks</figcaption>
+                </figure>
+              </section>
+              <section class="image1">
+                <figure>
+                  <img src="../img/oscar.jpg" alt="Oscar Isaac" />
+                  <figcaption>Oscar Isaac</figcaption>
+                </figure>
+              </section>
+           </div>
+
+
+        <div class="video">
+          <section class="video-bo">
+            <article class="image-bo">
+              <div class="sous-image">
+              <section class="image-film">
+                <img src="../img/lalaland3.jpg" alt="lalaland"/>
+              </section>
+              <section class="sousimage-texte">
+                <div class="sousimagefilm">
+                  <img src="../img/la.jpg" alt="lalaland"/>
+                </div>
+                <div class="sousimagefilm">
+                  <img src="../img/lala.jpg" alt="lalaland"/>
+                </div>
+                <div class="sousimagefilm">
+                  <img src="../img/lalala.jpg" alt="lalaland"/>
+                </div>
+              </section>
+              <section class="message">
+                <input class="message-texte" type="text" id="avis4" name="avis-film"  placeholder="Avis :" />
+              </section>
+            </div>
+          </article>
+          <article class="video-bande">
+            <section class="textefilmbo5">
+              <h2> Lalaland</h2>
+              <ul>
+                <li> Production : États-Unis </li>
+                <li> Genre : Musical, Romance </li>
+                <li> Acteurs principaux : Emma Stone, Ryan Gosling </li>
+                <li> date de sortie : 2016</li>
+                <li> Film de : Damien Chazelle</li>
+                <li> Durée : 128 minutes </li>
+              </ul>
+            </section>
+            <section class="textefilmbo2">
+              <h5> Résumé :</h5>
+              <p>Au cœur de Los Angeles, une actrice en devenir prénommée Mia sert des cafés entre deux auditions. 
+              De son côté, Sebastian, passionné de jazz, joue du piano dans des clubs miteux pour assurer sa subsistance. 
+              Tous deux sont bien loin de la vie rêvée à laquelle ils aspirent…
+              Le destin va réunir ces doux rêveurs, mais leur coup de foudre résistera-t-il aux tentations, aux déceptions, et à la vie trépidante d’Hollywood ?</p>
+              <video class="video1" autoplay loop muted>
+              <source src="../video/star.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video>
+            </section> 
+          </article>
+        </section>
+      </div>
+      <h4> Casting </h4>
+       <div class="casting">
+        <section class="image1">
+          <figure>
+            <img src="../img/ryan.jpg" alt="Ryan Gosling" />
+            <figcaption>Ryan Gosling</figcaption>
+          </figure>
+        </section>
+        <section class="image1">
+            <figure>
+              <img src="../img/mia.jpg" alt="Emma Stone" />
+              <figcaption class="texte-inversé">Emma Stone</figcaption>
+            </figure>
+          </section>
+          <section class="image1">
+            <figure>
+              <img src="../img/john.jpg" alt="John Legend" />
+              <figcaption>John Legend</figcaption>
+            </figure>
+          </section>
+          <section class="image1">
+            <figure>
+              <img src="../img/simmon.jpg" alt="J.K. Simmons" />
+              <figcaption class="texte-inversé">J.K. Simmons</figcaption>
+            </figure>
+          </section>
+          <section class="image1">
+            <figure>
+              <img src="../img/rose.jpg" alt="Rosemarie DeWitt" />
+              <figcaption>Rosemarie DeWitt</figcaption>
+            </figure>
+          </section>
+        </div>
+      </main>
+
+        <!-- Pied de page -->
+        <footer id="bas">
+          <p id="fin"> Copyright Maddie © 2023 </p>
+      </footer>
+      
+</body>
+</html>
